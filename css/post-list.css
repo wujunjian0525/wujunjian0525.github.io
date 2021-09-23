@@ -21,6 +21,10 @@
     transition: all 200ms ease;
 }
 
+.post-list-item:hover {
+box-shadow: 0 12px 20px 5px rgba(0, 0, 0, 0.05);
+} 
+
 .post-list-item:nth-child(2n-1) {
     margin-right: 8px;
 }
@@ -51,7 +55,6 @@
 
 .post-list-item:hover .cover-img img, .post-list-item>a:focus .cover-img img {
     transform: scale(1.03);
-    filter: brightness(0.85);
 }
 
 .post-list-item .title {
@@ -76,8 +79,10 @@
 }
 
 .post-list-item .excerpt {
-    font-size: 17px;
+    font-size: 14px;
+    font-weight:normal;
     color: var(--black-1);
+    margin-top: 16px;
 }
 
 @media screen and (max-width: 800px) {

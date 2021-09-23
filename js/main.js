@@ -33,6 +33,11 @@
   if (document.getElementById("nav-item-light-dark")) {
     let bodyEl = document.body;
     let lightDarkEl = document.getElementById("nav-item-light-dark");
+
+    if (Cookies.get('color-scheme')) {
+      bodyEl.setAttribute('data-color-scheme', Cookies.get('color-scheme'))
+  }
+
     lightDarkEl.addEventListener("click", (ev) => {
       const value = bodyEl.getAttribute("data-color-scheme");
       console.log(value);
