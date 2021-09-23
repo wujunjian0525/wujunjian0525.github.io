@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta name="color-scheme" content="light dark">
+  
+  <title>数字金额设计 - 主标题</title>
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+
+  
+<link rel="stylesheet" href="/css/var.css">
+
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+<link rel="stylesheet" href="/css/typography.css">
+
+  
+<link rel="stylesheet" href="/css/code-highlighting.css">
+
+  
+<link rel="stylesheet" href="/css/components.css">
+
+  
+<link rel="stylesheet" href="/css/nav.css">
+
+  
+<link rel="stylesheet" href="/css/paginator.css">
+
+  
+<link rel="stylesheet" href="/css/footer.css">
+
+  
+<link rel="stylesheet" href="/css/post-list.css">
+
+  
+<link rel="stylesheet" href="/css/waline.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/post.css">
+
+  
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+ 
+  
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+    <body data-color-scheme="auto">
+        <nav id="theme-nav">
+    <div class="inner">
+        <a class="title" href="/">WUJJ</a>
+        <div class="nav-arrow"></div>
+        <div class="nav-items">
+            <a class="nav-item nav-item-home" href="/">主页</a>
+            
+            
+            <a class="nav-item" href="/archives">文章</a>
+            
+            
+            
+            <a class="nav-item" href="/about">关于</a>
+            
+            
+            
+            <a class="nav-item nav-item-github nav-item-icon" href="https://github.com/wujunjian0525" target="_blank">&nbsp;</a>
+            
+            
+            <span class="nav-item nav-item-icon nav-item-light-dark" id="nav-item-light-dark">&nbsp;</span>
+        </div>
+    </div>
+</nav>
+        <article class="post">
+    <div class="meta">
+        
+        <div class="date" id="date">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <span>September</span>
+            
+            
+            
+            
+            <span>18,</span>
+            <span>2021</span>
+        </div>
+        
+
+        <h2 class="title">数字金额设计</h2>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="content">
+        <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>金融产品中有很多专业术语、产品名称在无法被精简时，通常对于从设计师、产品经理角度来说,解决办法就是用省略号（“….”）来解决，虽然大家都知道省略号解决办法是个很无奈的办法。<br>但是，是否有更加人性化的解决方案呢？<br>信息展示微体验交互设计<br>​</p>
+<h2 id="场景故事"><a href="#场景故事" class="headerlink" title="场景故事"></a>场景故事</h2><h3 id="场景1｜基金产品交易金额信息"><a href="#场景1｜基金产品交易金额信息" class="headerlink" title="场景1｜基金产品交易金额信息"></a>场景1<strong>｜</strong>基金产品交易金额信息</h3><p>业务反馈昨天有人购入了4000万的基金。<br><img src="/2021/09/18/article1/a2.jpeg" alt="aa"></p>
+<h4 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h4><p>当业务提出为大额申购的客户遇到的问题进行体验优化时，对自己对产品的设计思路有了新的反省<del>（贫穷限制了想象）</del>。金融产品的交互设计上需要考虑极限值的展示方案不应只存在一个解决方案“省略号/…”。</p>
+<h4 id="方案探索"><a href="#方案探索" class="headerlink" title="方案探索"></a>方案探索</h4><ul>
+<li>❌改变原有卡片信息框架，由于出现这种的情况的概率是非常低，毕竟普通的用户群体达不到如此之大的数额，为此改变整个信息展示架构不实际。</li>
+<li>❌运用省略加点击气泡展示，这种做法层级太深且让用户的认知成本变高，不太符合正常的行为逻辑。因为在一般的操作中，金额信息很少设计成可以点击的状态；</li>
+<li>❌统一缩小字体，不是最佳的解决方案，显得页面失去视觉重点。</li>
+</ul>
+<p><img src="/2021/09/18/article1/a5.jpeg" alt="aa"></p>
+<p>最后，我们提出了一个想法，在现有的界面信息框架基础上，金额信息可以根据数值的变化进行缩放。当达到正常显示状态的最大限制后，通过缩小字体大小，来达到信息展示完整的效果。如此一来，既不用改变当前的界面，也可以顾全少部分大额申购的用户的体验<del>（欢迎土豪们来砸单）</del>。<br><img src="/2021/09/18/article1/a3.gif" alt="aa"><br>最终方案展示</p>
+<h3 id="场景2｜学以致用-基金名称自适应展示"><a href="#场景2｜学以致用-基金名称自适应展示" class="headerlink" title="场景2｜学以致用-基金名称自适应展示"></a>场景2<strong>｜</strong>学以致用-基金名称自适应展示</h3><h4 id="思考-1"><a href="#思考-1" class="headerlink" title="思考"></a>思考</h4><p>那么，可否将这类展示方式应用与其他的文字字节长度较长的场景上？例如应用在「基金排行」、「基金自选列表」等场景下？相比于场景1的金额数位大小的动态缩放，以上的几种场景更加需要此种方法的应用。在港元、美元基金市场上，基金名称相较于国内的基金名称来说，名称就显得有点过长。一般情况下，过长的产品名称会有两种方法去妥协：</p>
+<ul>
+<li>文字超出换行展示（排列容易混乱）</li>
+<li>文字超出，用“…”代替展示（信息不完整展示）</li>
+</ul>
+<p>但是这两种方案都似乎不是完美地解决信息过长展示的最佳实践。<br>​</p>
+<h4 id="方案探索-1"><a href="#方案探索-1" class="headerlink" title="方案探索"></a>方案探索</h4><p>为了更好的提升用户的阅读体验，有效地传达信息内容。首先我们设置了名称的展示区域长度，当名称字节长度超过设置区域，根据最小的字体的作为限制条件，进行文字大小的缩小，尽可能缩小至可以展示完整。若仍无法用最小字体完全展示名称，再使用省略号<del>（真的尽力了）</del>。<br>​</p>
+<p><img src="/2021/09/18/article1/a4.gif" alt="aa"><br>最终方案展示<br>​</p>
+<p>​</p>
+<h2 id><a href="#" class="headerlink" title></a></h2><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在日常界面设计工作中，很多时候我们都很容易忽略极限值的设计又或者仅仅在交互文档上留下一句“文字超出n字节，用「 … 」代替展示”。尤其在移动设备的界面设计中，由于失去了鼠标hover的轻交互，这种方案不一定适用于所有场景。<br>同时也验证了好的交互设计，是从用户认知行为、心理等角度出发，设计符合人的认知与行为习惯的界面设计。</p>
+<blockquote>
+<p>虽然是一个原本功能完善、结构合理的机器，但如果从使用行为，尤其是任务流程的角度看，它没有能够很好地满足行为逻辑的要求。</p>
+</blockquote>
+<p>​</p>
+<p>参考文献<br>[1]交互设计-从物理逻辑到行为逻辑，辛向阳；</p>
+
+    </div>
+
+    <div class="about">
+        <h1>关于本文</h1>
+        <p>本文作者 John Doe, 许可由 <a
+                target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC 4.0</a>.</p>
+    </div>
+
+    
+        
+    
+</article>
+        <!-- <footer>
+    <div class="inner">
+        <div class="links">
+            
+            <div class="group">
+                <h4 class="title">Blog</h4>
+                
+                <a href="/" class="item">Blog</a>
+                
+                <a href="/archives" class="item">Archives</a>
+                
+                <a href="/friends" class="item">Friends</a>
+                
+                <a href="/projects" class="item">Projects</a>
+                
+                <a href="/resume" class="item">Resume</a>
+                
+                <a href="/about" class="item">About</a>
+                
+                <a href="/atom.xml" class="item">RSS</a>
+                
+            </div>
+            
+            <div class="group">
+                <h4 class="title">Projects</h4>
+                
+                <a target="_blank" rel="noopener" href="https://github.com/MrWillCom/rsa-cli" class="item">RSA CLI</a>
+                
+                <a target="_blank" rel="noopener" href="https://github.com/MrWillCom/hexo-theme-cupertino" class="item">Hexo Theme Cupertino</a>
+                
+                <a target="_blank" rel="noopener" href="https://github.com/MrWillCom/a-calendar" class="item">A Calendar</a>
+                
+                <a target="_blank" rel="noopener" href="https://github.com/MrWillCom/auto-mirroring-bucket" class="item">Auto Mirroring Bucket</a>
+                
+            </div>
+            
+            <div class="group">
+                <h4 class="title">Me</h4>
+                
+                <a target="_blank" rel="noopener" href="https://github.com/MrWillCom" class="item">GitHub</a>
+                
+                <a target="_blank" rel="noopener" href="https://codepen.io/mrwillcom" class="item">CodePen</a>
+                
+                <a target="_blank" rel="noopener" href="https://www.patreon.com/MrWillCom" class="item">Patreon</a>
+                
+                <a target="_blank" rel="noopener" href="https://noc.social/@MrWillCom" class="item">Mastodon</a>
+                
+                <a href="mailto:mr.will.com@outlook.com" class="item">Email</a>
+                
+            </div>
+            
+        </div>
+        <span>&copy; 2021 John Doe<br >驱动由 <a href="http://hexo.io/" target="_blank">Hexo</a></span>
+        
+            <br>
+            <div class="color-scheme-toggle" role="radiogroup" id="theme-color-scheme-toggle">
+                <label>
+                    <input type="radio" value="light">
+                    <span>Light</span>
+                </label>
+                <label>
+                    <input type="radio" value="dark">
+                    <span>Dark</span>
+                </label>
+                <label>
+                    <input type="radio" value="auto">
+                    <span>Auto</span>
+                </label>
+            </div>
+        
+    </div>
+</footer>
+ -->
+        
+<script src="/js/main.js"></script>
+
+        
+    </body>
+</html>
